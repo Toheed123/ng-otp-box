@@ -1,0 +1,26 @@
+.otp-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.otp-mat-field {
+  width: 46px;
+}
+
+.otp-mat-field input {
+  text-align: center;
+  font-size: 18px;
+}
+
+.otp-mat-field.mat-form-field-appearance-fill
+  .mat-form-field-flex {
+  background-color: #f2f2f2;
+  border-radius: 6px;
+}
+
+/* Keep red error state visible */
+.otp-mat-field.mat-form-field-invalid
+  .mat-form-field-flex {
+  background-color: #fdecea;
+}
