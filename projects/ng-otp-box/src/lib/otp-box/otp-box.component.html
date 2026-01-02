@@ -1,0 +1,21 @@
+<div>
+  <form [formGroup]="otpForm" (paste)="onPaste($event)">
+
+    <div class="otp-container" formArrayName="otp">
+      <ng-container *ngFor="let ctrl of otpArray.controls; let i = index">
+        <mat-form-field appearance="outline" class="otp-mat-field" [class.mat-form-field-invalid]="
+          otpForm.invalid && (otpForm.touched || otpForm.dirty)">
+          <input matInput [type]="inputType === 'masked' ? 'password' : 'text'" maxlength="1"
+            #otpInput cdkFocusInitial [formControlName]="i" (input)="onInput($event, i)"
+            (keydown)="onKeyDown($event, i)" />
+        </mat-form-field>
+      </ng-container>
+    </div>
+    <!-- <div class="otp-password-toggle" *ngIf="inputType === 'password' && showUnMaskCheckBoxYN">
+      <mat-checkbox [checked]="unmaskPassword" (change)="togglePasswordVisibility()">
+        Show password
+      </mat-checkbox>
+    </div> -->
+
+  </form>
+</div>
