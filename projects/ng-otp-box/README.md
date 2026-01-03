@@ -70,5 +70,5 @@ Name            | Type     | Required | Default | Description                   
 
 ## Contributing
 
-Show your support by starring the repo!
+Show your support by starring the repo! Feel free to open [issues](https://github.com/Toheed123/ng-otp-box/issues/new) or contribute via [pull requests](https://github.com/Toheed123/ng-otp-box/compare).
 
